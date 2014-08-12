@@ -2,13 +2,20 @@
     $(document).ready(function () {
 
 
-        $('.slider').cycle({
-            fx: 'fade',
-            timeout: 0,
-            height: 'auto',
-            pause: '',
-            next: '.comments'
+        /* Dynamic top menu positioning
+         *
+         */
+
+        var num = 50; //number of pixels before modifying styles
+
+        $(window).bind('scroll', function () {
+            if ($(window).scrollTop() > num) {
+                $('.menu').addClass('fixed');
+            } else {
+                $('.menu').removeClass('fixed');
+            }
         });
+        /*************************************/
 
         $('#frm-first form').validate();
         $('#frm-first form').validate();
