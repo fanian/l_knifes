@@ -1,0 +1,881 @@
+/* line 5, D:/proj/idea/knifes/sass/style.sass */
+body {
+  font-family: "conv_pfdintextcondpro-thin" Sans-serif;
+  background: white;
+  min-width: 1200px;
+  min-height: 200px;
+  color: #3c3c3c;
+}
+
+/* line 12, D:/proj/idea/knifes/sass/style.sass */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* line 21, D:/proj/idea/knifes/sass/style.sass */
+.wrapper, .why .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 26, D:/proj/idea/knifes/sass/style.sass */
+.fl {
+  float: left;
+}
+
+/* line 29, D:/proj/idea/knifes/sass/style.sass */
+.fr {
+  float: right;
+}
+
+/* line 32, D:/proj/idea/knifes/sass/style.sass */
+.cb {
+  clear: both;
+}
+
+/* line 34, D:/proj/idea/knifes/sass/style.sass */
+input.error, textarea.error {
+  box-shadow: 0 0 5px red !important;
+}
+
+/* line 36, D:/proj/idea/knifes/sass/style.sass */
+label.error {
+  display: none !important;
+}
+/* line 2, D:/proj/idea/knifes/sass/_placeholderText.scss */
+label.error.placeholder {
+  color: black;
+}
+/* line 3, D:/proj/idea/knifes/sass/_placeholderText.scss */
+label.error:-moz-placeholder {
+  color: black;
+}
+/* line 4, D:/proj/idea/knifes/sass/_placeholderText.scss */
+label.error::-moz-placeholder {
+  color: black;
+}
+/* line 5, D:/proj/idea/knifes/sass/_placeholderText.scss */
+label.error:-ms-input-placeholder {
+  color: black;
+}
+/* line 6, D:/proj/idea/knifes/sass/_placeholderText.scss */
+label.error::-webkit-input-placeholder {
+  color: black;
+}
+
+/* line 44, D:/proj/idea/knifes/sass/style.sass */
+header {
+  padding-top: 20px;
+  height: 140px;
+  position: fixed;
+  background: white;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+}
+/* line 52, D:/proj/idea/knifes/sass/style.sass */
+header nav {
+  float: left;
+  margin: 10px auto 0;
+}
+/* line 56, D:/proj/idea/knifes/sass/style.sass */
+header nav ul {
+  font-size: 18px;
+  padding: 0;
+}
+/* line 59, D:/proj/idea/knifes/sass/style.sass */
+header nav ul li {
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  font-family: "conv_pfdintextcondpro-italic";
+  border-right: solid 2px;
+  color: #ff4b5a;
+}
+/* line 66, D:/proj/idea/knifes/sass/style.sass */
+header nav ul a {
+  text-decoration: none;
+  color: inherit;
+  padding-right: 20px;
+}
+/* line 70, D:/proj/idea/knifes/sass/style.sass */
+header nav ul a:hover {
+  text-decoration: underline;
+}
+/* line 72, D:/proj/idea/knifes/sass/style.sass */
+header .addr {
+  text-align: right;
+  margin-top: 5px;
+}
+/* line 75, D:/proj/idea/knifes/sass/style.sass */
+header .addr h3 {
+  font-family: "conv_pfdintextcondpro-italic";
+  color: #ff4b5a;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+/* line 81, D:/proj/idea/knifes/sass/style.sass */
+header .addr h2 {
+  font-size: 36px;
+  color: #78b43c;
+  font-weight: normal;
+  margin: 0;
+  font-family: "conv_pfdintextcondpro-light";
+  line-height: 1em;
+}
+/* line 89, D:/proj/idea/knifes/sass/style.sass */
+header .addr h2 span {
+  font-family: "conv_pfdintextcondpro-regular";
+}
+/* line 91, D:/proj/idea/knifes/sass/style.sass */
+header .addr a {
+  display: inline-block;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  color: #59951d;
+  -webkit-box-shadow: inset 0 -2px 0 rgba(70, 130, 10, 0.25);
+  -moz-box-shadow: inset 0 -2px 0 rgba(70, 130, 10, 0.25);
+  box-shadow: inset 0 -2px 0 rgba(70, 130, 10, 0.25);
+  background: #59bd09;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #59bd09), color-stop(64.99%, #c7ff81), color-stop(100%, #e5ffc7));
+  background-image: -webkit-linear-gradient(bottom, #59bd09 0%, #c7ff81 64.99%, #e5ffc7 100%);
+  background-image: -moz-linear-gradient(bottom, #59bd09 0%, #c7ff81 64.99%, #e5ffc7 100%);
+  background-image: -o-linear-gradient(bottom, #59bd09 0%, #c7ff81 64.99%, #e5ffc7 100%);
+  background-image: linear-gradient(bottom, #59bd09 0%, #c7ff81 64.99%, #e5ffc7 100%);
+  height: 50px;
+  padding: 12px 40px 0 40px;
+  text-align: center;
+  margin-top: 4px;
+  text-decoration: none;
+}
+/* line 105, D:/proj/idea/knifes/sass/style.sass */
+header .addr a:hover {
+  background: #c7ff81;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #e5ffc7), color-stop(64.99%, #c7ff81), color-stop(100%, #59bd09));
+  background-image: -webkit-linear-gradient(bottom, #e5ffc7 0%, #c7ff81 64.99%, #59bd09 100%);
+  background-image: -moz-linear-gradient(bottom, #e5ffc7 0%, #c7ff81 64.99%, #59bd09 100%);
+  background-image: -o-linear-gradient(bottom, #e5ffc7 0%, #c7ff81 64.99%, #59bd09 100%);
+  background-image: linear-gradient(bottom, #e5ffc7 0%, #c7ff81 64.99%, #59bd09 100%);
+}
+
+/* line 112, D:/proj/idea/knifes/sass/style.sass */
+.top, .bottom {
+  background: url(../img/top_bg.png) center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 740px;
+  padding-top: 10px;
+  margin-top: 140px;
+  position: relative;
+}
+/* line 119, D:/proj/idea/knifes/sass/style.sass */
+.top .tv, .bottom .tv, .bottom .meat-knife {
+  position: absolute;
+  background: url(../img/tv_icon.png);
+  width: 40px;
+  height: 36px;
+  content: "";
+  top: 580px;
+  right: 505px;
+}
+/* line 128, D:/proj/idea/knifes/sass/style.sass */
+.top .tv span, .bottom .tv span, .bottom .meat-knife span {
+  display: inline-block;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  background: #8bbd45;
+  width: 120px;
+  height: 120px;
+  color: white;
+  margin-left: 50px;
+  margin-top: -35px;
+  text-align: center;
+  padding-top: 25px;
+}
+/* line 140, D:/proj/idea/knifes/sass/style.sass */
+.top .from, .bottom .from {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  -ms-border-radius: 90px;
+  -o-border-radius: 90px;
+  border-radius: 90px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  background: #f58c00;
+  background: -webkit-linear-gradient(190deg, #fff9d1 0%, #ffb400 39.62%, #cd0900 100%);
+  background: -moz-linear-gradient(190deg, #fff9d1 0%, #ffb400 39.62%, #cd0900 100%);
+  background: -o-linear-gradient(190deg, #fff9d1 0%, #ffb400 39.62%, #cd0900 100%);
+  background: linear-gradient(190deg, #fff9d1 0%, #ffb400 39.62%, #cd0900 100%);
+  width: 180px;
+  height: 180px;
+  color: white;
+  font-family: "conv_pfdintextcondpro-light";
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.7em;
+  padding-top: 30px;
+  z-index: 2;
+}
+/* line 157, D:/proj/idea/knifes/sass/style.sass */
+.top .from span, .bottom .from span {
+  font-family: "conv_pfagoraslabpro-medium";
+  font-size: 60px;
+}
+/* line 160, D:/proj/idea/knifes/sass/style.sass */
+.top .price, .bottom .price {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
+  border-radius: 70px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  background: #ff818b;
+  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #e5134f), color-stop(100%, #ff818b));
+  background: -webkit-linear-gradient(bottom, #e5134f 0%, #ff818b 100%);
+  background: -moz-linear-gradient(bottom, #e5134f 0%, #ff818b 100%);
+  background: -o-linear-gradient(bottom, #e5134f 0%, #ff818b 100%);
+  background: linear-gradient(bottom, #e5134f 0%, #ff818b 100%);
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 210px;
+  left: 140px;
+  color: white;
+  font-family: "conv_pfagoraslabpro-meditalic";
+  z-index: 1;
+  text-align: center;
+  padding-top: 45px;
+  font-size: 36px;
+  font-weight: normal;
+}
+/* line 183, D:/proj/idea/knifes/sass/style.sass */
+.top .text, .bottom .text {
+  position: relative;
+}
+/* line 185, D:/proj/idea/knifes/sass/style.sass */
+.top .text h2, .bottom .text h2 {
+  text-align: center;
+  font-size: 36px;
+  font-family: "conv_pfdintextcondpro-light";
+  font-weight: normal;
+  color: #3c5032;
+  margin-bottom: 0;
+}
+/* line 192, D:/proj/idea/knifes/sass/style.sass */
+.top .text h3, .bottom .text h3 {
+  text-align: center;
+  font-family: "Conv_tt0140m_";
+  font-size: 72px;
+  color: #d21e1e;
+  margin: 0;
+  line-height: 0.9em;
+}
+/* line 199, D:/proj/idea/knifes/sass/style.sass */
+.top .text h3:before, .bottom .text h3:before {
+  position: absolute;
+  content: "";
+  background: url(../img/pro_icon.png) left center no-repeat;
+  width: 79px;
+  height: 83px;
+  top: 40px;
+  left: 185px;
+}
+/* line 212, D:/proj/idea/knifes/sass/style.sass */
+.top .form, .bottom .form {
+  width: 340px;
+  background: url(../img/form_bg.png) no-repeat;
+  height: 540px;
+  margin-top: 20px;
+}
+/* line 218, D:/proj/idea/knifes/sass/style.sass */
+.top .form .caption, .bottom .form .caption {
+  height: 260px;
+  padding-top: 20px;
+}
+/* line 222, D:/proj/idea/knifes/sass/style.sass */
+.top .form .caption h3, .bottom .form .caption h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Conv_pfdintextcondpro-light";
+  color: white;
+}
+/* line 230, D:/proj/idea/knifes/sass/style.sass */
+.top .form .caption h4, .bottom .form .caption h4, .top .form .caption .frm h5, .frm .top .form .caption h5, .bottom .form .caption .frm h5, .frm .bottom .form .caption h5 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: normal;
+  font-family: "Conv_pfdintextcondpro-light";
+  color: white;
+}
+
+/* line 239, D:/proj/idea/knifes/sass/style.sass */
+.counter {
+  width: 285px;
+  margin: auto auto 0;
+  display: block;
+  text-align: center;
+}
+/* line 245, D:/proj/idea/knifes/sass/style.sass */
+.counter p {
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 3px;
+  font-size: 14px;
+  position: static;
+  font-family: "conv_segoeprintregular";
+}
+/* line 253, D:/proj/idea/knifes/sass/style.sass */
+.counter ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+/* line 259, D:/proj/idea/knifes/sass/style.sass */
+.counter ul li {
+  float: left;
+  margin: 0 15px;
+  text-align: center;
+  position: relative;
+}
+/* line 265, D:/proj/idea/knifes/sass/style.sass */
+.counter ul li span {
+  text-shadow: 1px 1px 1px black;
+  display: block;
+  font-size: 48px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 3px;
+  width: 60px;
+  font-family: "conv_pfdintextcondpro-regular";
+  color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-box-shadow: inset 0 -5px 0 rgba(140, 210, 80, 0.75);
+  -moz-box-shadow: inset 0 -5px 0 rgba(140, 210, 80, 0.75);
+  box-shadow: inset 0 -5px 0 rgba(140, 210, 80, 0.75);
+  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #95db4b), color-stop(100%, #b3ef87));
+  background: -webkit-linear-gradient(bottom, #95db4b 0%, #b3ef87 100%);
+  background: -moz-linear-gradient(bottom, #95db4b 0%, #b3ef87 100%);
+  background: -o-linear-gradient(bottom, #95db4b 0%, #b3ef87 100%);
+  background: linear-gradient(bottom, #95db4b 0%, #b3ef87 100%);
+}
+/* line 279, D:/proj/idea/knifes/sass/style.sass */
+.counter ul li span:after {
+  position: absolute;
+  content: "";
+  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #81c73b), color-stop(100%, rgba(180, 240, 135, 0)));
+  background: -webkit-linear-gradient(bottom, #81c73b 0%, rgba(180, 240, 135, 0) 100%);
+  background: -moz-linear-gradient(bottom, #81c73b 0%, rgba(180, 240, 135, 0) 100%);
+  background: -o-linear-gradient(bottom, #81c73b 0%, rgba(180, 240, 135, 0) 100%);
+  background: linear-gradient(bottom, #81c73b 0%, rgba(180, 240, 135, 0) 100%);
+  width: 60px;
+  height: 3px;
+  left: 0;
+  top: 42px;
+}
+
+/* line 293, D:/proj/idea/knifes/sass/style.sass */
+.frm {
+  height: 257px;
+  padding-top: 15px;
+}
+/* line 297, D:/proj/idea/knifes/sass/style.sass */
+.frm form input {
+  padding-left: 14px;
+  width: 240px;
+  height: 50px;
+  background: white;
+  display: block;
+  margin: auto auto 10px;
+  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  border: 2px solid #669f2c;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+/* line 309, D:/proj/idea/knifes/sass/style.sass */
+.frm form .button {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  width: 240px;
+  height: 70px;
+  color: white;
+  display: block;
+  margin: 12px auto auto;
+  font-family: "Conv_pfdintextcondpro-light";
+  font-size: 24px;
+  border: none;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  background: #bd0909;
+  -webkit-box-shadow: inset 0 -3px 0 rgba(190, 10, 10, 0.55);
+  -moz-box-shadow: inset 0 -3px 0 rgba(190, 10, 10, 0.55);
+  box-shadow: inset 0 -3px 0 rgba(190, 10, 10, 0.55);
+  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #bd0931), color-stop(10.01%, #bd0909), color-stop(64.99%, #ff4b59), color-stop(100%, #f9a9bd));
+  background: -webkit-linear-gradient(bottom, #bd0931 0%, #bd0909 10.01%, #ff4b59 64.99%, #f9a9bd 100%);
+  background: -moz-linear-gradient(bottom, #bd0931 0%, #bd0909 10.01%, #ff4b59 64.99%, #f9a9bd 100%);
+  background: -o-linear-gradient(bottom, #bd0931 0%, #bd0909 10.01%, #ff4b59 64.99%, #f9a9bd 100%);
+  background: linear-gradient(bottom, #bd0931 0%, #bd0909 10.01%, #ff4b59 64.99%, #f9a9bd 100%);
+}
+/* line 323, D:/proj/idea/knifes/sass/style.sass */
+.frm h4, .frm h5 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  margin-top: 5px;
+  font-weight: normal;
+  font-family: "Conv_pfdintextcondpro-light";
+  font-size: 18px;
+}
+/* line 331, D:/proj/idea/knifes/sass/style.sass */
+.frm h5 {
+  margin: 0;
+  font-size: 24px;
+}
+/* line 335, D:/proj/idea/knifes/sass/style.sass */
+.frm h5 span {
+  font-family: "conv_pfdintextcondpro-regular";
+}
+/* line 340, D:/proj/idea/knifes/sass/style.sass */
+.frm .button:hover {
+  background: #ff4b59;
+  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #f9a9bd), color-stop(10.01%, #ff4b59), color-stop(64.99%, #bd0909), color-stop(100%, #bd0931));
+  background: -webkit-linear-gradient(bottom, #f9a9bd 0%, #ff4b59 10.01%, #bd0909 64.99%, #bd0931 100%);
+  background: -moz-linear-gradient(bottom, #f9a9bd 0%, #ff4b59 10.01%, #bd0909 64.99%, #bd0931 100%);
+  background: -o-linear-gradient(bottom, #f9a9bd 0%, #ff4b59 10.01%, #bd0909 64.99%, #bd0931 100%);
+  background: linear-gradient(bottom, #f9a9bd 0%, #ff4b59 10.01%, #bd0909 64.99%, #bd0931 100%);
+}
+
+/* line 346, D:/proj/idea/knifes/sass/style.sass */
+.kitchenSet h2 {
+  font-size: 60px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "roboto_thregular";
+  color: #3c5032;
+}
+/* line 353, D:/proj/idea/knifes/sass/style.sass */
+.kitchenSet .items {
+  background: url(../img/items_bg.png) center no-repeat;
+  width: 580px;
+  height: 655px;
+}
+/* line 357, D:/proj/idea/knifes/sass/style.sass */
+.kitchenSet .items span {
+  position: absolute;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  width: 120px;
+  height: 120px;
+  font-family: "conv_pfdintextcondpro-light";
+  font-size: 18px;
+  text-align: center;
+  line-height: 1em;
+  padding-top: 40px;
+  background: #ffbd00;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #ffbd00), color-stop(100%, #fff5af));
+  background-image: -webkit-linear-gradient(bottom, #ffbd00 0%, #fff5af 100%);
+  background-image: -moz-linear-gradient(bottom, #ffbd00 0%, #fff5af 100%);
+  background-image: -o-linear-gradient(bottom, #ffbd00 0%, #fff5af 100%);
+  background-image: linear-gradient(bottom, #ffbd00 0%, #fff5af 100%);
+}
+/* line 370, D:/proj/idea/knifes/sass/style.sass */
+.kitchenSet .items span.item1 {
+  top: 0;
+  left: 70px;
+}
+/* line 373, D:/proj/idea/knifes/sass/style.sass */
+.kitchenSet .items span.item2 {
+  top: 0;
+  left: 305px;
+}
+/* line 376, D:/proj/idea/knifes/sass/style.sass */
+.kitchenSet .items span.item3 {
+  top: 0;
+  left: 500px;
+}
+/* line 379, D:/proj/idea/knifes/sass/style.sass */
+.kitchenSet .items span.item4 {
+  top: 380px;
+  left: 60px;
+}
+/* line 382, D:/proj/idea/knifes/sass/style.sass */
+.kitchenSet .items span.item5 {
+  top: 380px;
+  left: 310px;
+}
+/* line 385, D:/proj/idea/knifes/sass/style.sass */
+.kitchenSet .items span.item6 {
+  top: 380px;
+  left: 500px;
+}
+/* line 389, D:/proj/idea/knifes/sass/style.sass */
+.kitchenSet .video .video_preview {
+  position: relative;
+}
+/* line 391, D:/proj/idea/knifes/sass/style.sass */
+.kitchenSet .video .video_preview h4, .kitchenSet .video .video_preview .frm h5, .frm .kitchenSet .video .video_preview h5 {
+  text-align: center;
+  font-size: 14px;
+  font-family: "conv_segoeprintregular";
+  color: #5a961e;
+  margin: 0 0 5px;
+}
+/* line 397, D:/proj/idea/knifes/sass/style.sass */
+.kitchenSet .video .video_preview .play {
+  position: absolute;
+  top: 70px;
+  left: 130px;
+}
+/* line 401, D:/proj/idea/knifes/sass/style.sass */
+.kitchenSet .video ul {
+  display: inline-block;
+  width: 340px;
+  padding-left: 0;
+  font-size: 16px;
+  font-family: "Conv_pfdintextcondpro-light";
+  font-weight: normal;
+  list-style-type: none;
+}
+/* line 409, D:/proj/idea/knifes/sass/style.sass */
+.kitchenSet .video ul li {
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+/* line 412, D:/proj/idea/knifes/sass/style.sass */
+.kitchenSet .video ul span {
+  color: #e61e1e;
+}
+
+/* line 418, D:/proj/idea/knifes/sass/style.sass */
+.why {
+  background: url(../img/why_bg.jpg) center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 960px;
+  margin-top: 60px;
+  padding-top: 40px;
+}
+/* line 424, D:/proj/idea/knifes/sass/style.sass */
+.why .wrapper {
+  width: 940px;
+}
+/* line 427, D:/proj/idea/knifes/sass/style.sass */
+.why h3 {
+  text-align: center;
+  color: white;
+  font-family: "conv_pfdintextcondpro-light";
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+/* line 434, D:/proj/idea/knifes/sass/style.sass */
+.why .col-left {
+  width: 615px;
+}
+/* line 436, D:/proj/idea/knifes/sass/style.sass */
+.why .col-left .col-left-half {
+  margin-right: 15px;
+  text-align: center;
+  width: 290px;
+  display: inline-block;
+}
+/* line 441, D:/proj/idea/knifes/sass/style.sass */
+.why .col-left .col-left-half .img {
+  display: inline-block;
+}
+/* line 443, D:/proj/idea/knifes/sass/style.sass */
+.why .col-left .col-left-half .img:nth-child(2n+1) {
+  margin-left: 25px;
+}
+/* line 445, D:/proj/idea/knifes/sass/style.sass */
+.why .col-left .col-left-half h4, .why .col-left .col-left-half .frm h5, .frm .why .col-left .col-left-half h5 {
+  font-family: "conv_segoeprintregular";
+  font-size: 18px;
+  color: #1e4b0f;
+  font-weight: normal;
+}
+/* line 450, D:/proj/idea/knifes/sass/style.sass */
+.why .col-left p {
+  font-family: "Conv_PFDinTextCondPro-Regular";
+  font-size: 18px;
+  line-height: 1.1em;
+  font-weight: normal;
+  color: white;
+  margin-top: 5px;
+}
+/* line 457, D:/proj/idea/knifes/sass/style.sass */
+.why .col-left p.p-first {
+  width: 500px;
+}
+/* line 460, D:/proj/idea/knifes/sass/style.sass */
+.why .col-left p.p-second {
+  font-size: 16px;
+  font-family: "Conv_pfdintextcondpro-light";
+  width: 500px;
+}
+/* line 464, D:/proj/idea/knifes/sass/style.sass */
+.why .col-right {
+  width: 280px;
+}
+/* line 466, D:/proj/idea/knifes/sass/style.sass */
+.why .col-right h3 {
+  text-align: left;
+  line-height: 1.2em;
+  font-family: "roboto_thregular";
+  margin-top: 10px;
+}
+/* line 471, D:/proj/idea/knifes/sass/style.sass */
+.why .col-right h3 span {
+  font-family: "robotoregular";
+}
+/* line 473, D:/proj/idea/knifes/sass/style.sass */
+.why .col-right ul {
+  list-style: none;
+  color: white;
+  font-family: "conv_pfdintextcondpro-regular";
+  font-size: 18px;
+  display: inline-block;
+  font-weight: normal;
+  padding-left: 10px;
+}
+/* line 483, D:/proj/idea/knifes/sass/style.sass */
+.why h2 {
+  text-align: center;
+  color: white;
+  font-family: "roboto_thregular";
+  font-size: 72px;
+  margin: 0;
+  line-height: 1.1em;
+}
+
+/* line 492, D:/proj/idea/knifes/sass/style.sass */
+.mln h2 {
+  text-align: center;
+  font-size: 45px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+/* line 497, D:/proj/idea/knifes/sass/style.sass */
+.mln h2 span {
+  color: white;
+  font-weight: bold;
+  background: url(../img/circle.png) center no-repeat;
+  padding-top: 58px;
+  width: 175px;
+  height: 175px;
+  display: inline-block;
+}
+/* line 505, D:/proj/idea/knifes/sass/style.sass */
+.mln .russia {
+  background: url(../img/russia.png) left center no-repeat;
+  height: 400px;
+  width: 1030px;
+  margin-left: -30px;
+}
+/* line 510, D:/proj/idea/knifes/sass/style.sass */
+.mln .russia .text {
+  font-family: "conv_pfdintextcondpro-regular";
+}
+/* line 512, D:/proj/idea/knifes/sass/style.sass */
+.mln .russia .text h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: left;
+}
+/* line 518, D:/proj/idea/knifes/sass/style.sass */
+.mln .russia .text h4, .mln .russia .text .frm h5, .frm .mln .russia .text h5 {
+  font-weight: normal;
+  text-align: left;
+  font-size: 17px;
+}
+/* line 522, D:/proj/idea/knifes/sass/style.sass */
+.mln .russia .text ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 50px;
+}
+/* line 526, D:/proj/idea/knifes/sass/style.sass */
+.mln .russia .text ul li {
+  display: block;
+  width: 430px;
+  height: 90px;
+  padding-left: 80px;
+  padding-right: 50px;
+}
+/* line 533, D:/proj/idea/knifes/sass/style.sass */
+.mln .russia .text ul li.mln1 {
+  background: url(../img/mln1.png) left top no-repeat;
+}
+/* line 535, D:/proj/idea/knifes/sass/style.sass */
+.mln .russia .text ul li.mln2 {
+  background: url(../img/mln2.png) left top no-repeat;
+}
+
+/* line 538, D:/proj/idea/knifes/sass/style.sass */
+.bottom {
+  margin-top: 0;
+  background: url(../img/bottom_bg.png) center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 760px;
+}
+/* line 540, D:/proj/idea/knifes/sass/style.sass */
+.bottom .wrapper {
+  width: 1030px;
+}
+/* line 542, D:/proj/idea/knifes/sass/style.sass */
+.bottom .meat-knife {
+  background: url(../img/meat_knife.png);
+  width: 260px;
+  height: 530px;
+  top: 190px;
+  right: 280px;
+  z-index: 1;
+}
+/* line 550, D:/proj/idea/knifes/sass/style.sass */
+.bottom .from {
+  top: 165px;
+  left: 340px;
+}
+/* line 553, D:/proj/idea/knifes/sass/style.sass */
+.bottom .price {
+  top: 255px;
+  left: 480px;
+}
+/* line 563, D:/proj/idea/knifes/sass/style.sass */
+.bottom .text h3 {
+  color: #3c5032;
+  font-weight: normal;
+}
+/* line 566, D:/proj/idea/knifes/sass/style.sass */
+.bottom .text h3:before {
+  background: none;
+}
+
+/* line 569, D:/proj/idea/knifes/sass/style.sass */
+footer p {
+  font-size: 16px;
+  text-align: center;
+  margin: 5px;
+}
+/* line 573, D:/proj/idea/knifes/sass/style.sass */
+footer p:last-child {
+  margin-bottom: 15px;
+}
+
+/* line 576, D:/proj/idea/knifes/sass/style.sass */
+.feedback form {
+  width: 300px;
+}
+/* line 578, D:/proj/idea/knifes/sass/style.sass */
+.feedback form h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+}
+/* line 582, D:/proj/idea/knifes/sass/style.sass */
+.feedback form input {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  padding-left: 14px;
+  width: 285px;
+  height: 45px;
+  background: white;
+  display: block;
+  margin: auto auto 10px;
+  border: 1px solid darkgrey;
+}
+/* line 591, D:/proj/idea/knifes/sass/style.sass */
+.feedback form button {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  width: 285px;
+  height: 68px;
+  color: #59951d;
+  -webkit-box-shadow: inset 0 -2px 0 rgba(70, 130, 10, 0.25);
+  -moz-box-shadow: inset 0 -2px 0 rgba(70, 130, 10, 0.25);
+  box-shadow: inset 0 -2px 0 rgba(70, 130, 10, 0.25);
+  background: #59bd09;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #59bd09), color-stop(64.99%, #c7ff81), color-stop(100%, #e5ffc7));
+  background-image: -webkit-linear-gradient(bottom, #59bd09 0%, #c7ff81 64.99%, #e5ffc7 100%);
+  background-image: -moz-linear-gradient(bottom, #59bd09 0%, #c7ff81 64.99%, #e5ffc7 100%);
+  background-image: -o-linear-gradient(bottom, #59bd09 0%, #c7ff81 64.99%, #e5ffc7 100%);
+  background-image: linear-gradient(bottom, #59bd09 0%, #c7ff81 64.99%, #e5ffc7 100%);
+  text-transform: uppercase;
+  display: block;
+  margin: 10px auto 10px auto;
+  font-size: 26px;
+  border: none;
+}
+/* line 604, D:/proj/idea/knifes/sass/style.sass */
+.feedback form button:hover {
+  background: #c7ff81;
+}
