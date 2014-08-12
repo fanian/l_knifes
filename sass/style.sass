@@ -43,15 +43,13 @@ label.error
 
 header
   padding-top: 20px
-  height: 140px
-  position: fixed
   background: #ffffff
-  width: 100%
-  z-index: 9999
-  top: 0
+
   nav
     float: left
     margin: 10px auto 0
+
+
 
     ul
       font-size: 18px
@@ -61,8 +59,10 @@ header
         float: left
         margin-right: 15px
         font-family: 'conv_pfdintextcondpro-italic'
-        border-right: solid 2px
+        border-right: solid 1px
         color: #ff4b5a
+        &:last-child
+          border: none
       a
         text-decoration: none
         color: inherit
@@ -106,7 +106,19 @@ header
         background: #c7ff81
         +background-image(linear-gradient(bottom, #e5ffc7 0%, #c7ff81 64.99%, #59bd09 100%))
 
-
+.scrollHeader
+  @extend header
+  padding-top: 0
+  position: fixed
+  display: none
+  width: 100%
+  height: 50px
+  background: rgba(#c7ff81, 0.8)
+  z-index: 9999
+  top: 0
+  nav
+    float: left
+    margin-top: -10px
 
 
 .top
@@ -114,7 +126,6 @@ header
   +background-size(cover)
   height: 740px
   padding-top: 10px
-  margin-top: 140px
   position: relative
   .tv
     position: absolute
