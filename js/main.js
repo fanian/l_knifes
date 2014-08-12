@@ -25,6 +25,9 @@
 //        });
 //        /*************************************/
 
+
+
+
         $('#frm-first form').validate();
         $('#frm-first form').validate();
 
@@ -49,6 +52,14 @@
 
     });
 })(jQuery);
+jQuery("document").ready(function($){
+    $('nav ul li a').on('click', function(){
+        $('a.active').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+
+
 (function ($) {
     // Counter
 
