@@ -26,7 +26,7 @@
 //        /*************************************/
 
 
-
+        $(window).stellar();
 
         $('#frm-first form').validate();
         $('#frm-first form').validate();
